@@ -23,11 +23,10 @@ def shipping_cost(weight):
   ground = ground_shipping(weight)
   premium = 125
   if drone < ground and drone < premium:
-    return print("La forma mas barata es por dron, y cuesta: " + str(drone))
+    return print("La forma mas barata es por dron, y cuesta: " + str(drone) + (" €."))
   elif ground < drone and ground < premium:
-    return print("La forma mas barata es por tierra, y cuesta: " + str(ground))
+    return print("La forma mas barata es por tierra, y cuesta: " + str(ground) + (" €."))
   else:
-    return print("La forma mas barata es envío premium por tierra, y cuesta: " + str(premium))
+    return print("La forma mas barata es envío premium por tierra, y cuesta: " + str(premium) + (" €."))
 
-shipping_cost(43)
-  
+shipping_cost(50)
